@@ -132,8 +132,8 @@ def create_weather_df(h_df):
     return weather_df
 
 # Load berkas
-day_df = pd.read_csv(r"D:\Delta\Statistika\Semester 6\DBS\Week 3\Proyek Akhir\day.csv")
-hour_df = pd.read_csv(r"D:\Delta\Statistika\Semester 6\DBS\Week 3\Proyek Akhir\hour.csv")
+day_df = pd.read_csv(r"Data/day.csv")
+hour_df = pd.read_csv(r"Data/hour.csv")
 
 day_df['dteday'] = pd.to_datetime(day_df['dteday'])
 hour_df['dteday'] = pd.to_datetime(hour_df['dteday'])
